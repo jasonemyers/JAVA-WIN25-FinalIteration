@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html data-wf-page="67b24ffaba87d87186215da5" data-wf-site="67b24ffaba87d87186215da6">
+<head>
+  <meta charset="utf-8">
+  <title>FindMyDoc</title>
+
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/popup.css" rel="stylesheet" type="text/css">
+  <link href="css/findmydoc-23990d-8823ee85c69937e8518be2.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Merriweather:300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Inconsolata:400,700"]
+        }
+      });
+    </script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+
+  <!-- Header Begining -->
+  <section class="header-section position-absoulate">
+    <div  data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header w-nav">
+      <div  class="top-header">
+        <div class="top-bar header-wrapper">
+          <div class="header-container w-container">
+            <div class="top-bar-flex">
+              <div>
+                <h1 class="heading"><span class="text-span">F</span>ind<span class="text-span-2">M</span>y<span class="text-span-3">D</span>oc</h1>
+                <div class="text-block">Yassir, Amy, Connor, Emily, Austin</div>
+              </div>
+              <div class="phone-menu">
+                <div class="top-div-box"><img src="images/icons8-medical-50_1icons8-medical-50.png" loading="lazy" alt="" class="top-link-image">
+                  <a href="doctors-sign-in.html" class="top-link">FindMyDoc for Professionals</a>
+                </div>
+                <div id="signin-container">
+                  <a href="sign-in.html" class="link">Account Sign in</a>
+                </div>
+                <div id="loggedin-container" style="display: none;">
+                  <span class="greeting">Hello, </span>
+                  <span id="user-name" class="user-name"></span>
+                  <button id="logout-btn" class="logout-button">Log out</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-container w-container">
+            <div class="header-content">
+              <a href="index.html" aria-current="page" class="header-logo w-nav-brand w--current"></a>
+              <div class="div-block-14">
+                <nav role="navigation" class="header-men-wrapper w-nav-menu">
+                  <div class="div-block-15">
+                    <ul role="list" class="brix---header-nav-menu-list">
+                      <li class="brix---header-nav-list-item">
+                        <a href="index.html" aria-current="page" class="brix---header-nav-link w-nav-link w--current">Home</a>
+                      </li>
+                      <li class="brix---header-nav-list-item">
+                        <a href="about-us.html" class="brix---header-nav-link w-nav-link">About</a>
+                      </li>
+                      <li class="brix---header-nav-list-item">
+                        <a href="doctors.html" class="brix---header-nav-link w-nav-link">Doctors</a>
+                      </li>
+                      <li class="brix---header-nav-list-item">
+                        <a href="blog.html" class="brix---header-nav-link w-nav-link">Blog</a>
+                      </li>
+                      <li class="brix---header-nav-list-item">
+                        <a href="contact-us.html" class="brix---header-nav-link w-nav-link">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="hamburger w-nav-button">
+                  <div class="hamberguer-menu"></div>
+                  <div class="hamburger-menu-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Header End -->
+
+  <!-- Hero Section -->
+  <div id="Scroll-Top" class="page-wrapper home-page">
+    <div class="main-wrapper">
+      <section class="hero-section-one">
+        <div class="w-layout-blockcontainer doctors-container w-container">
+          <div class="hero-section-one-wrapper">
+            <div  class="hero-one-content-wrap">
+              <h1  class="hero-title">Find the best <span class="hero-title-span">doctors </span>near you</h1>
+              <p  class="hero-title-description">Discover top-rated doctors, read real patient reviews, and book appointments with ease. FindMyDoc connects you with trusted healthcare professionals to ensure you receive the best care.</p><img src="images/dr-cart.png" loading="lazy"  data-w-id="46144528-b755-6ebe-92eb-5081aad501b6" alt="Doctor Card" class="dr-list-card"><img src="images/hero-oneround-shape.svg" loading="lazy"  data-w-id="46144528-b755-6ebe-92eb-5081aad501b7" alt="Rounded Shape" class="hero-one-rounded-shape">
+              <div  class="dr-dropdown-serach-wrap home-page-search">
+                <div class="dr-dropdown-serach-form-wrap home-page-search-bar-container w-form">
+                  <form  name="wf-form-Email-Form" data-name="Email Form" method="get" class="dr-dropdown-serach-form" data-wf-page-id="67b24ffaba87d87186215da5" data-wf-element-id="46144528-b755-6ebe-92eb-5081aad501ba">
+                    <div class="search-block"><input class="search w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Search for a doctor..." type="text" id="name-2"></div>
+                    <div class="location">
+                      <div class="location-icon-wrap"><img  src="images/location.svg" alt="Location Icon" class="location-icon"></div><input class="search location-serach w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Type in your location..." type="text" id="name-2">
+                    </div>
+                    <div class="speciality">
+                      <div class="dr-icon-wrap"><img loading="lazy" src="images/dr-icon.svg" alt="Dr Icon" class="dr-icon"></div><select id="field-2" name="field-2" data-name="Field 2" required="" class="dr-dropdown-select-field curso-pointer w-select">
+                        <option value="">Doctor</option>
+                        <option value="First">Gynecology</option>
+                        <option value="Second">Cardiologist</option>
+                        <option value="Third">Oncology</option>
+                        <option value="Fourth">Neurology</option>
+                        <option value="Sixth">Pediatrics</option>
+                      </select>
+                    </div><input type="submit" data-wait="Please wait..." class="dr-serach-button w-button" value="">
+                  </form>
+                  <div class="w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+            <div    class="hero-one-banner-wrap"><img src="images/banner-dr-img.png" loading="lazy" alt="Banner image" class="hero-one-banner-image"></div><img src="images/hero-one-rectangle_1hero-one-rectangle.png" loading="lazy" data-w-id="46144528-b755-6ebe-92eb-5081aad501ce" id="w-node-_46144528-b755-6ebe-92eb-5081aad501ce-86215da5" alt="Rectangle Shape" class="hero-bg-rectangle-shape">
+          </div>
+        </div>
+        <div class="hero-section-one-bg-shape"></div>
+      </section>
+<!-- Hero End -->
+
+<!-- Service Section  -->
+      <section class="service-section section-gap-y-axis-140px">
+        <div class="w-layout-blockcontainer doctors-container services-container w-container">
+          <div class="service-section-wrapper">
+            <div class="section-title-wrap center">
+              <div class="section-sub-title">Services</div>
+              <h2 class="section-title service">The Best Quality Service You Can Get</h2>
+            </div>
+            <div data-delay="4000" data-animation="slide" class="service-slider w-slider" data-autoplay="false" data-easing="ease"  data-hide-arrows="false" data-disable-swipe="false" data-w-id="46144528-b755-6ebe-92eb-5081aad501d8" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+              <div class="service-slider-mask w-slider-mask">
+                <div class="service-slider-item w-slide">
+                  <div class="service-slider-list-wrapper w-dyn-list">
+                    <div role="list" class="service-slider-list w-dyn-items">
+                      <div role="listitem" class="service-slider-list-item w-dyn-item">
+                        <div class="department-slider-card">
+                          <div class="department-icon-wrapper"><img alt="Department Icon" loading="lazy" src="" class="department-icon w-dyn-bind-empty"></div>
+                          <div class="department-slider-content">
+                            <a href="#" class="department-name-link w-inline-block">
+                              <h3 class="department-name w-dyn-bind-empty"></h3>
+                            </a>
+                            <p class="department-short-details w-dyn-bind-empty"></p>
+                          </div>
+                          <div class="department-card-hover-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  </div>
+                </div>
+                <div  class="service-slider-item w-slide">
+                  <div class="service-slider-list-wrapper w-dyn-list">
+                    <div role="list" class="service-slider-list w-dyn-items">
+                      <div role="listitem" class="service-slider-list-item w-dyn-item">
+                        <div style="border-color:rgba(88,88,88,0.2)" class="department-slider-card">
+                          <div class="department-icon-wrapper"><img alt="Department Icon" loading="lazy" src="" class="department-icon w-dyn-bind-empty"></div>
+                          <div class="department-slider-content">
+                            <a href="#" class="department-name-link w-inline-block">
+                              <h3 class="department-name w-dyn-bind-empty"></h3>
+                            </a>
+                            <p class="department-short-details w-dyn-bind-empty"></p>
+                          </div>
+                          <div  class="department-card-hover-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-slider-item w-slide">
+                  <div class="service-slider-list-wrapper w-dyn-list">
+                    <div role="list" class="service-slider-list w-dyn-items">
+                      <div role="listitem" class="service-slider-list-item w-dyn-item">
+                        <div class="department-slider-card">
+                          <div class="department-icon-wrapper"><img alt="Department Icon" loading="lazy" src="" class="department-icon w-dyn-bind-empty"></div>
+                          <div class="department-slider-content">
+                            <a href="#" class="department-name-link w-inline-block">
+                              <h3 class="department-name w-dyn-bind-empty"></h3>
+                            </a>
+                            <p class="department-short-details w-dyn-bind-empty"></p>
+                          </div>
+                          <div class="department-card-hover-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-slider-item w-slide">
+                  <div class="service-slider-list-wrapper w-dyn-list">
+                    <div role="list" class="service-slider-list w-dyn-items">
+                      <div role="listitem" class="service-slider-list-item w-dyn-item">
+                        <div class="department-slider-card">
+                          <div class="department-icon-wrapper"><img alt="Department Icon" loading="lazy" src="" class="department-icon w-dyn-bind-empty"></div>
+                          <div class="department-slider-content">
+                            <a href="#" class="department-name-link w-inline-block">
+                              <h3 class="department-name w-dyn-bind-empty"></h3>
+                            </a>
+                            <p class="department-short-details w-dyn-bind-empty"></p>
+                            <div class="learn-more-wrap">
+                              <a href="#" class="learn-more-link-wrap w-inline-block">
+                                <div class="department-link-text">Learn More</div>
+                                <div class="learn-more-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                  </svg></div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="department-card-hover-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-slider-item w-slide">
+                  <div class="service-slider-list-wrapper w-dyn-list">
+                    <div role="list" class="service-slider-list w-dyn-items">
+                      <div role="listitem" class="service-slider-list-item w-dyn-item">
+                        <div class="department-slider-card">
+                          <div class="department-icon-wrapper"><img alt="Department Icon" loading="lazy" src="" class="department-icon w-dyn-bind-empty"></div>
+                          <div class="department-slider-content">
+                            <a href="#" class="department-name-link w-inline-block">
+                              <h3 class="department-name w-dyn-bind-empty"></h3>
+                            </a>
+                            <p class="department-short-details w-dyn-bind-empty"></p>
+                            <div class="learn-more-wrap">
+                              <a href="#" class="learn-more-link-wrap w-inline-block">
+                                <div class="department-link-text">Learn More</div>
+                                <div class="learn-more-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                    <path d="M13.3341 10C13.3348 10.1097 13.3138 10.2184 13.2723 10.32C13.2308 10.4215 13.1697 10.5138 13.0925 10.5917L8.09247 15.5917C7.93555 15.7486 7.72272 15.8368 7.50081 15.8368C7.27889 15.8368 7.06606 15.7486 6.90914 15.5917C6.75222 15.4348 6.66406 15.222 6.66406 15C6.66406 14.7781 6.75222 14.5653 6.90914 14.4084L11.3258 10L6.91747 5.59172C6.78095 5.4323 6.70961 5.22723 6.71771 5.0175C6.72581 4.80777 6.81276 4.60882 6.96117 4.46041C7.10958 4.312 7.30853 4.22506 7.51826 4.21696C7.72799 4.20886 7.93305 4.28019 8.09247 4.41672L13.0925 9.41672C13.2464 9.57193 13.3332 9.78143 13.3341 10Z" fill="currentcolor"></path>
+                                  </svg></div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="department-card-hover-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-slider-item w-slide">
+                  <div class="service-slider-list-wrapper w-dyn-list">
+                    <div role="list" class="service-slider-list w-dyn-items">
+                      <div role="listitem" class="service-slider-list-item w-dyn-item">
+                        <div class="department-slider-card">
+                          <div class="department-icon-wrapper"><img alt="Department Icon" loading="lazy" src="" class="department-icon w-dyn-bind-empty"></div>
+                          <div class="department-slider-content">
+                            <a href="#" class="department-name-link w-inline-block">
+                              <h3 class="department-name w-dyn-bind-empty"></h3>
+                            </a>
+                            <p class="department-short-details w-dyn-bind-empty"></p>
+                            <div class="learn-more-wrap">
+                              <a href="#" class="learn-more-link-wrap w-inline-block">
+                                <div class="department-link-text">Learn More</div>
+                                <div class="learn-more-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                                    <path d="M13.3341 10C13.3348 10.1097 13.3138 10.2184 13.2723 10.32C13.2308 10.4215 13.1697 10.5138 13.0925 10.5917L8.09247 15.5917C7.93555 15.7486 7.72272 15.8368 7.50081 15.8368C7.27889 15.8368 7.06606 15.7486 6.90914 15.5917C6.75222 15.4348 6.66406 15.222 6.66406 15C6.66406 14.7781 6.75222 14.5653 6.90914 14.4084L11.3258 10L6.91747 5.59172C6.78095 5.4323 6.70961 5.22723 6.71771 5.0175C6.72581 4.80777 6.81276 4.60882 6.96117 4.46041C7.10958 4.312 7.30853 4.22506 7.51826 4.21696C7.72799 4.20886 7.93305 4.28019 8.09247 4.41672L13.0925 9.41672C13.2464 9.57193 13.3332 9.78143 13.3341 10Z" fill="currentcolor"></path>
+                                  </svg></div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="department-card-hover-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-dyn-empty">
+                      <div>No items found.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="department-slider-arrow left w-slider-arrow-left">
+                <div class="department-slider-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                  </svg></div>
+              </div>
+              <div class="department-slider-arrow right w-slider-arrow-right">
+                <div class="department-slider-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                  </svg></div>
+              </div>
+              <div class="slider-hidden-nav w-slider-nav w-round w-num"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Service End -->
+
+<!-- Most Viewed Doctors in week -->
+      
+ <h1>Most Viewed Doctors This Week</h1>
+ <div id="top-doctors"></div>
+ 
+
+<!-- Doctors End -->
+
+<!-- About Us -->
+      <section class="home-about-section padding-bottom-140px">
+        <div class="w-layout-blockcontainer doctors-container w-container">
+          <div class="home-about-section-wrapper">
+            <div class="home-about-content-wrap">
+              <div class="section-sub-title">About Us</div>
+              <h2 class="section-title about">Stay Healthy With 100% Treatment</h2>
+              <p   class="about-description">At MedCare, our unwavering commitment to health excellence drives our mission. With a dedicated team of medical experts, cutting-edge research, and a passion for compassionate care.</p>
+              <div   class="our-quality-card-block">
+                <div class="our-quality-card-wrap">
+                  <div  class="counter-number-wrapper">
+                    <div style="-webkit-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block lower-movement">
+                      <div class="counter-number">1</div>
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">3</div>
+                      <div class="counter-number">4</div>
+                      <div class="counter-number">1</div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block upper-movement">
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">0</div>
+                      <div class="counter-number">5</div>
+                      <div class="counter-number">7</div>
+                      <div class="counter-number">2</div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block lower-movement">
+                      <div class="counter-number">0</div>
+                      <div class="counter-number">8</div>
+                      <div class="counter-number">6</div>
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">0</div>
+                    </div>
+                    <div class="counter-heading">K+</div>
+                  </div>
+                  <div class="our-quality-title">Recover Patient</div>
+                </div>
+                <div class="our-quality-card-wrap">
+                  <div  class="counter-number-wrapper">
+                    <div style="-webkit-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block lower-movement">
+                      <div class="counter-number">0</div>
+                      <div class="counter-number">8</div>
+                      <div class="counter-number">6</div>
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">0</div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block upper-movement">
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">0</div>
+                      <div class="counter-number">5</div>
+                      <div class="counter-number">7</div>
+                      <div class="counter-number">5</div>
+                    </div>
+                    <div class="counter-heading">+</div>
+                  </div>
+                  <div class="our-quality-title">Years Experience</div>
+                </div>
+                <div class="our-quality-card-wrap">
+                  <div  class="counter-number-wrapper">
+                    <div style="-webkit-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block lower-movement">
+                      <div class="counter-number">1</div>
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">3</div>
+                      <div class="counter-number">4</div>
+                      <div class="counter-number">5</div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block upper-movement">
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">0</div>
+                      <div class="counter-number">5</div>
+                      <div class="counter-number">7</div>
+                      <div class="counter-number">0</div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block lower-movement">
+                      <div class="counter-number">5</div>
+                      <div class="counter-number">4</div>
+                      <div class="counter-number">3</div>
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">1</div>
+                    </div>
+                    <div class="counter-heading">K+</div>
+                  </div>
+                  <div class="our-quality-title">Positive Review</div>
+                </div>
+                <div class="our-quality-card-wrap">
+                  <div  class="counter-number-wrapper">
+                    <div style="-webkit-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, -400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block lower-movement">
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">3</div>
+                      <div class="counter-number">4</div>
+                      <div class="counter-number">5</div>
+                      <div class="counter-number">6</div>
+                    </div>
+                    <div style="-webkit-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block upper-movement">
+                      <div class="counter-number">0</div>
+                      <div class="counter-number">1</div>
+                      <div class="counter-number">2</div>
+                      <div class="counter-number">3</div>
+                      <div class="counter-number">4</div>
+                    </div>
+                    <div class="counter-heading">/</div>
+                    <div style="-webkit-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 400%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="counter-number-block upper-movement">
+                      <div class="counter-number">3</div>
+                      <div class="counter-number">4</div>
+                      <div class="counter-number">5</div>
+                      <div class="counter-number">6</div>
+                      <div class="counter-number">7</div>
+                    </div>
+                  </div>
+                  <div class="our-quality-title">Service Provided</div>
+                </div>
+              </div>
+              <a   href="about-us.html" class="button-outline margin-top-60px w-button">Learn More</a>
+            </div>
+            <div   class="home-about-banner-wrap">
+              <div class="home-about-banner-image-block"><img src="images/about-banner-image-large.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 66vw, (max-width: 991px) 63vw, (max-width: 1279px) 440px, (max-width: 1439px) 565px, (max-width: 1919px) 554px, 627px" srcset="images/about-banner-image-large-p-500.png 500w, images/about-banner-image-large.png 627w" alt="Banner" class="home-about-banner-image"></div>
+              <div class="about-banner-image-two"><img src="images/About-Banner-Image-Two.jpg" loading="lazy" alt="Banner" class="about-banner-two"></div><img src="images/ellipse-top_1ellipse-top.png" loading="lazy" data-w-id="46144528-b755-6ebe-92eb-5081aad50309" alt="Ellipse" class="ab-elipse-shape-top"><img src="images/ellipse-center_1ellipse-center.png" loading="lazy" data-w-id="46144528-b755-6ebe-92eb-5081aad5030a" alt="Ellipse" class="ab-elipse-shape-center"><img src="images/ellipse-bottom_1ellipse-bottom.png" loading="lazy" data-w-id="46144528-b755-6ebe-92eb-5081aad5030b" alt="Ellipse" class="ab-elipse-shape-bottom">
+            </div>
+          </div>
+          <div class="w-layout-blockcontainer about-us-video w-container">
+            <div class="video w-video w-embed"></div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us Secion End -->
+
+      <!-- Blog Section Start -->
+      <section class="blog-section padding-bottom-140px">
+        <div class="w-layout-blockcontainer doctors-container blog-continaer w-container">
+          <div class="section-title-wrap center margin-bottom-60px">
+            <div class="section-sub-title">Blogs</div>
+            <h2 class="section-title blog">Tips To Better Your Health</h2>
+          </div>
+          <div   class="blog-wrapper">
+            <div class="blog-collection-list-wrapper w-dyn-list">
+              <div role="list" class="blog-collection-list w-dyn-items">
+                <div role="listitem" class="blog-collection-item w-dyn-item">
+                  <div class="blog-post-card-wrap">
+                    <a href="#" class="blog-post-image-link-block w-inline-block"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="Blog Image" class="blog-post-image w-dyn-bind-empty"></a>
+                    <div class="blog-post-card-info">
+                      <div class="blog-post-meta-wrap">
+                        <div class="date-wrap">
+                          <div class="calender-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                              <mask id="mask0_709_472" style="mask-type:luminance" maskunits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                <path d="M0 1.90735e-06H20V20H0V1.90735e-06Z" fill="white"></path>
+                              </mask>
+                              <g mask="url(#mask0_709_472)">
+                                <path d="M4.10156 15.8594V18.2031H19.4141V2.96875H4.10156V6.48438H19.4141" stroke="#585858" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M7.65625 1.79688V4.14062" stroke="#585858" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M15.8984 1.79688V4.14062" stroke="#585858" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M11.7578 1.79688V4.14062" stroke="#585858" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4.10156 6.48438C4.10156 12.9297 0.585938 15.8594 0.585938 15.8594H15.8984C15.8984 15.8594 19.4141 12.9297 19.4141 6.48438" stroke="#585858" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </g>
+                            </svg></div>
+                          <div class="blog-meta-date w-dyn-bind-empty"></div>
+                        </div>
+                        <div class="blog-auhtor-profile-wrap"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="Author" class="blog-author-small-image w-dyn-bind-empty">
+                          <a href="#" class="blog-author-name-link"></a>
+                        </div>
+                      </div>
+                      <a href="#" class="blog-name-link w-inline-block">
+                        <h3 class="blog-name w-dyn-bind-empty"></h3>
+                      </a>
+                      <div class="read-more-wrap">
+                        <a href="#" class="read-more-link-wrap w-inline-block">
+                          <div class="department-link-text">Learn More</div>
+                          <div class="learn-more-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                              <path d="M13.3341 10C13.3348 10.1097 13.3138 10.2184 13.2723 10.32C13.2308 10.4215 13.1697 10.5138 13.0925 10.5917L8.09247 15.5917C7.93555 15.7486 7.72272 15.8368 7.50081 15.8368C7.27889 15.8368 7.06606 15.7486 6.90914 15.5917C6.75222 15.4348 6.66406 15.222 6.66406 15C6.66406 14.7781 6.75222 14.5653 6.90914 14.4084L11.3258 10L6.91747 5.59172C6.78095 5.4323 6.70961 5.22723 6.71771 5.0175C6.72581 4.80777 6.81276 4.60882 6.96117 4.46041C7.10958 4.312 7.30853 4.22506 7.51826 4.21696C7.72799 4.20886 7.93305 4.28019 8.09247 4.41672L13.0925 9.41672C13.2464 9.57193 13.3332 9.78143 13.3341 10Z" fill="currentcolor"></path>
+                            </svg></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="blog-card-hover-shadow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+            </div>
+            <div class="button-wrap align-center margin-top-60px">
+              <a href="blog.html" class="button-outline w-button">View All Blogs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brand-logo-section padding-bottom-140px">
+        <div class="w-layout-blockcontainer doctors-container w-container">
+          <div data-w-id="46144528-b755-6ebe-92eb-5081aad50334" class="brand-logo-main-wrapper">
+            <div class="brand-logo-animation-wrapper">
+              <div class="brand-logo-block">
+                <div class="brand-logo-wrapper">
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                  <div class="company-logo-block"><img src="images/medicaid-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 180px" srcset="images/medicaid-removebg-preview-p-500.png 500w, images/medicaid-removebg-preview.png 739w" alt="Company Logo" class="company-logo"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section End -->
+    </div>
+
+    <!-- Footer Section End -->
+    <section class="footer-section">
+      <div class="w-layout-blockcontainer doctors-container footer-container w-container">
+        <div class="footer-block-wrapper">
+          <div data-w-id="930cbbf2-e22c-508e-4443-ba9f31767a12" class="footer-content">
+            <div id="w-node-_930cbbf2-e22c-508e-4443-ba9f31767a13-31767a0f" class="footer-block">
+              <a href="#" class="footer-logo-link-block w-inline-block">
+                <h1 class="heading"><span class="text-span">F</span>ind<span class="text-span-2">M</span>y<span class="text-span-3">D</span>oc</h1>
+              </a>
+              <div class="footer-address">Empowering wellness through knowledge and care</div>
+            </div>
+            <div class="footer-block">
+              <div class="footer-title">Menu</div>
+              <div class="footer-link-wrapper">
+                <a href="#" class="footer-link">Home</a>
+                <a href="about-us.html" class="footer-link">About</a>
+                <a href="blog.html" class="footer-link">Blog</a>
+                <a href="doctors.html" class="footer-link">Doctors</a>
+                <a href="contact-us.html" class="footer-link">Contact</a>
+              </div>
+            </div>
+            <div class="footer-block">
+              <div class="footer-title">Utility pages</div>
+              <div class="footer-link-wrapper">
+                <a href="401.html" class="footer-link">Sign In For User</a>
+                <a href="#" class="footer-link">Sign In For Doctor</a>
+                <a href="#" class="footer-link">User Agreement</a>
+              </div>
+            </div>
+            <div class="footer-block">
+              <div class="footer-title">Subscribe Now</div>
+              <div class="footer-link-wrapper">
+                <div class="footer-subscribe-text">Stay informed and inspired with our newsletter</div>
+                <div class="newsletter-input-block-two">
+                  <div class="newsletter-form-block-two w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form" method="get" class="newsletter-form-two" data-wf-page-id="67b24ffaba87d87186215da5" data-wf-element-id="930cbbf2-e22c-508e-4443-ba9f31767a44"><input class="newsletter-input-field-two w-input" maxlength="256" name="Email" data-name="Email" placeholder="Your email" type="email" id="Email" required=""><input type="submit" data-wait="Please wait..." class="subscribe-button w-button" value="Subscribe"></form>
+                    <div class="w-form-done">
+                      <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                      <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-w-id="930cbbf2-e22c-508e-4443-ba9f31767a4d" class="copy-right-block">
+            <div class="footer-copyright-center">Copyright © <a href="#" class="template-link">FindMyDoc</a>| Designed by <a href="#" target="_blank" class="brandbes-link">Amy, Yassir, Austin, Ayman, Connor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section End -->
+
+  </div>
+
+  
+  <!-- Tooltip Section Start -->
+  <section>
+  <div class="cloneable-container-default center">
+    <div class="container-default _100 w-container">
+      <div id="w-node-d0ca541e-dacd-73ef-613e-0f4b3959d213-3959d211" class="tooltip-content---brix-2">
+        <div data-w-id="d0ca541e-dacd-73ef-613e-0f4b3959d214" class="text-200 bold">Need Help?</div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Tooltip Section End -->
+ 
+</body>
+<script src="js/main.js"></script>
+<script src="js/userdetection.js"></script>
+<script>
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = encodeURIComponent(document.getElementById('searchName').value);
+    const specialty = encodeURIComponent(document.getElementById('searchSpecialty').value);
+    const location = encodeURIComponent(document.getElementById('searchLocation').value);
+
+    const query = `?name=${name}&specialty=${specialty}&location=${location}`;
+
+    window.location.href = `/doctors${query}`;
+  });
+</script>
+
+</html>
